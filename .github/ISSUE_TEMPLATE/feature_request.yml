@@ -1,0 +1,29 @@
+name: ✨ 功能建议
+description: 提出新武器、新敌人、新关卡或体验改进的想法
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: 欢迎脑洞！路线图里的方向（武器 / 敌人 / 关卡 / 持久化 / 手柄反馈）尤其欢迎细化建议。
+  - type: textarea
+    id: idea
+    attributes:
+      label: 建议内容
+      description: 你希望加入或改进什么？
+      placeholder: 例如：希望加入霰弹枪，近距离一击多弹丸，适合仓库室内战……
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 为什么值得做
+      description: 它解决了什么体验问题，或带来什么乐趣？
+    validations:
+      required: false
+  - type: textarea
+    id: reference
+    attributes:
+      label: 参考案例
+      description: 其他游戏 / 作品中的类似设计（可选）
+    validations:
+      required: false

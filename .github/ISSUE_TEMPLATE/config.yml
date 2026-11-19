@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ▶ 在线体验
+    url: https://odin1024.github.io/jimao/
+    about: 先玩一局再反馈，问题描述会更准确
+  - name: ⬇ 下载离线版
+    url: https://github.com/odin1024/jimao/releases/latest
+    about: 单文件 HTML，双击即玩

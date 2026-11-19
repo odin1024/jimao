@@ -1,0 +1,76 @@
+name: 🐛 BUG 报告
+description: 报告游戏中的问题，帮助我们改进
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 感谢反馈！请尽量填写完整信息，便于我们复现问题。
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述
+      description: 发生了什么？你期望发生什么？
+      placeholder: 例如：切断第二处中继后画面卡住，但声音仍在播放……
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 如何一步步触发这个问题？
+      placeholder: |
+        1. 打开在线版 / 离线版
+        2. 部署后前往仓库 B
+        3. 切断中继时……
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: 设备与浏览器
+      options:
+        - 桌面 Chrome
+        - 桌面 Edge
+        - 桌面 Firefox
+        - 桌面 Safari
+        - 手机 / 平板（iOS Safari）
+        - 手机 / 平板（Android Chrome）
+        - 其他（请在补充信息中说明）
+    validations:
+      required: true
+  - type: dropdown
+    id: quality
+    attributes:
+      label: 画质档位（设置面板中可查看）
+      options:
+        - 低
+        - 中
+        - 高
+        - 极高
+        - 不确定
+    validations:
+      required: false
+  - type: dropdown
+    id: input
+    attributes:
+      label: 操作方式
+      options:
+        - 键鼠
+        - 触屏
+        - 手柄
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: 截图 / 录屏
+      description: 可直接粘贴图片或拖入视频，非常有助于定位问题
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 浏览器版本、设备型号、是否内嵌浏览器（如微信 / QQ 内置）等
+    validations:
+      required: false

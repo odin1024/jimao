@@ -1,22 +1,30 @@
 <div align="center">
 
+**中文** · [English](README.en.md)
+
 # 几猫 · 3A大作
 
 **单文件浏览器第一人称射击 · 开发体验版**
 
 [![Pages 部署](https://github.com/odin1024/jimao/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/odin1024/jimao/actions/workflows/pages/pages-build-deployment)
+[![版本](https://img.shields.io/github/v/release/odin1024/jimao)](https://github.com/odin1024/jimao/releases/latest)
 ![单文件](https://img.shields.io/badge/单文件-1.4_MB-ffb347)
 ![three.js](https://img.shields.io/badge/three.js-r180-8d9aa3)
 ![WebGL](https://img.shields.io/badge/WebGL-2.0-d2622a)
 ![零依赖](https://img.shields.io/badge/外部依赖-0-0b0d0f)
+[![License](https://img.shields.io/github/license/odin1024/jimao)](LICENSE)
 
 > 港区防御系统失控。切断三处中继，突破封锁，登船撤离。
 
 ### [▶ 立即在线体验](https://odin1024.github.io/jimao/)
 
+[⬇ 下载离线版 v1.0.0](https://github.com/odin1024/jimao/releases/latest/download/jimao-v1.0.0.html)（单文件 1.4MB，双击即玩，无需联网）
+
 桌面 Chrome / Edge 体验最佳 · 手机触屏可玩 · 支持手柄
 
-![几猫标题屏](docs/screenshots/01-title.jpg)
+![实机战斗演示](docs/demo.gif)
+
+*▲ 实机战斗演示 · 公网站点实时截取*
 
 </div>
 
@@ -46,6 +54,8 @@
 
 | | |
 |:---:|:---:|
+| ![标题屏](docs/screenshots/01-title.jpg) | ![项目介绍](docs/screenshots/12-about.jpg) |
+| **标题屏**：港务局标识 × 电影片头式视觉 | **项目介绍**：世界观与开发声明 |
 | ![实战 HUD](docs/screenshots/02-hud.jpg) | ![全息瞄准](docs/screenshots/03-ads.jpg) |
 | **实战 HUD**：罗盘带、目标菱形标记、无线电字幕、弹药计数 | **ADS 瞄准**：全息瞄具居中，程序化天空与雨幕 |
 | ![交火](docs/screenshots/04-combat.jpg) | ![受击](docs/screenshots/05-under-fire.jpg) |
@@ -61,7 +71,7 @@
 
 ## 玩法循环
 
-1. **潜入**：出生於四号泊位通道，罗盘与世界标记指引三处中继（堆场 A / 仓库 B / 码头 C）
+1. **潜入**：出生于四号泊位通道，罗盘与世界标记指引三处中继（堆场 A / 仓库 B / 码头 C）
 2. **切断**：靠近中继按住 `E`，交互环读条完成即切断；每切断一处触发一波敌潮
 3. **突围**：机械飞鸥（空中）与机械猎犬（地面）围攻；利用集装箱掩体、冲刺与蹲伏周旋
 4. **撤离**：三处中继全部切断后封锁解除，前往撤离点登船
@@ -129,19 +139,21 @@ python -m http.server 8080
 ```
 
 公网部署于 GitHub Pages（`main` 分支根目录）：推送后自动构建，约 1 分钟生效。
-更新版本流程：将新版游戏覆盖为 `index.html` → 提交 → 推送。
+更新版本流程：将新版游戏覆盖为 `index.html` → 提交 → 推送；里程碑版本打 tag 并发布 [Release](https://github.com/odin1024/jimao/releases)（附离线 HTML 下载）。
 
 ## 路线图
 
 - [ ] 更多武器与配件（霰弹 / 狙击、瞄具倍率）
 - [ ] 敌人种类扩展与精英单位
-- [ ] 关卡扩展：仓库 interior 与码头吊机顶层路线
+- [ ] 关卡扩展：仓库内部与码头吊机顶层路线
 - [ ] 设置与最佳成绩本地持久化
 - [ ] 手柄震动与自适应扳机反馈
 
 ## 反馈与声明
 
-欢迎通过 [Issues](https://github.com/odin1024/jimao/issues) 提交体验反馈、BUG 与建议。
+欢迎通过 [Issues](https://github.com/odin1024/jimao/issues) 提交体验反馈、BUG 与建议（已内置中文 BUG 报告 / 功能建议模板）。
+
+本项目基于 [MIT 许可证](LICENSE)开源。
 
 > 本项目为使用 Fable5.2 自主研发的开发体验版，"国产 3A 大作"为宣传梗；距离国际顶尖 3A 水准还有一定差距，持续开发与优化中。期待与游戏开发、图形学及 AI 方向的朋友交流。
 
